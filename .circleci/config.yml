@@ -16,7 +16,6 @@ jobs:
       - checkout
       - run: npm install -g vercel
       - run: vercel --token $VERCEL_TOKEN --prod
-    when: on_success
 
 workflows:
   version: 2
@@ -29,4 +28,4 @@ workflows:
           filters:
             branches:
               only:
-                - main 
+                - main
